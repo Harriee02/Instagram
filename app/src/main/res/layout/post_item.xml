@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/likeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/postedImage"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ufi_heart"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/postedImage"
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="0dp"
+        android:scaleType="fitXY"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postedImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="0dp"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/igName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="185dp"
+        android:text="igName"
+        android:textStyle="italic|bold" />
+
+    <ImageView
+        android:id="@+id/pfpImage"
+        android:layout_width="57dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtcreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:hint="TimeStamp" />
+
+
+    <!--        app:srcCompat="@drawable/ufi_comment" />-->
+
+    <ImageView
+        android:id="@+id/commentBtn"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/postedImage"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/likeBtn"
+        android:src="@drawable/ufi_comment" />
+
+    <ImageView
+        android:id="@+id/sendDmBtn"
+        android:layout_width="38dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/postedImage"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/commentBtn"
+        android:src="@drawable/ufi_new_direct" />
+
+</RelativeLayout>
